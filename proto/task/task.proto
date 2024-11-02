@@ -2,7 +2,7 @@ syntax="proto3";
 
 package task;
 
-option go_package = "makebeepboop.task.v0.0.4;task";
+option go_package = "makebeepboop.task.v0.0.5;task";
 
 service Task {
   rpc Create (CreateRequest) returns (CreateResponse);
