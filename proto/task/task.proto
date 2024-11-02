@@ -2,7 +2,7 @@ syntax="proto3";
 
 package task;
 
-option go_package = "makebeepboop.task.v0.0.3;task";
+option go_package = "makebeepboop.task.v0.0.4;task";
 
 service Task {
   rpc Create (CreateRequest) returns (CreateResponse);
@@ -12,7 +12,7 @@ service Task {
 message CreateRequest {
   string title = 1;
   string flow = 2;
-  string number = 3;
+  uint64 number = 3;
 }
 
 message CreateResponse {
